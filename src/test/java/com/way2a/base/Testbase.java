@@ -19,7 +19,7 @@ public class Testbase {
 	 */
 	@BeforeSuite
 	public void setup() {
-		driver=new ChromeDriver();
+		driver=new ChromeDriver();//opening chrome driver
 		
 	}
 	
