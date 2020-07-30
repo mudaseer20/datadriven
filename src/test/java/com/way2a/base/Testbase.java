@@ -1,6 +1,7 @@
 package com.way2a.base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -18,7 +19,7 @@ public class Testbase {
 	 */
 	@BeforeSuite
 	public void setup() {
-		
+		driver=new ChromeDriver();
 		
 	}
 	
@@ -26,6 +27,7 @@ public class Testbase {
 	@AfterSuite
 	public void teardown() {
 		
+		driver.quit();
 	}
 
 	
